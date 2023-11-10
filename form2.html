@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .container{
+            background-color: #9cbc2b;
+            padding: 20px 50px 50px 50px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+        }
+        .container-b{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .center{
+            margin-top: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body{
+            background-color: gray;
+        }
+        .option{
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding-right: 80px;
+            display: flex;
+            background-color: #f0f8ff6e;
+        }
+
+        label{
+            margin-right: 10%; 
+        }
+        img{
+            vertical-align: middle;
+            align-items: center;
+        }
+        button{
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            width: 30%;
+            margin-top: 20px;
+        }
+        .l{
+            width: 150px;
+        }
+        .in input, textarea{
+            width: 300px;
+        }
+        .option .card-r{
+            display: block;
+        }
+        ::placeholder{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+    <div class="container">
+        <form action="#">
+            <h2>Step 1: Your details</h2>
+            <div class="option">
+                <div class="l">
+                    <label for="fname">Name</label>
+                </div>
+                <div class="in">
+                    <input type="text" id="fname" name="fname">
+                </div>
+            </div>
+            <div class="option">
+                <div class="l">
+                    <label for="email">Email</label>
+                </div>
+                <div class="in">
+                    <input id="email" name="email" type="email" pattern="^\S{5,}@\D{3,5}\.\D{2,5}$" placeholder="example@domain.com">
+                </div>
+            </div>
+            <div class="option">
+                <div class="l">
+                  <label for="email">Phone</label>  
+                </div>
+                <div class="in">
+                    <input id="email" name="email" type="email" placeholder="Eg. +4565098640">
+                </div>
+            </div>
+
+            <h2>Step 2: Delivery address</h2>
+            <div class="option">
+                <div class="l">
+                    <label for="addr">Address</label>
+                </div>
+                <div class="in">
+                    <textarea name="message" rows="5" cols="30"></textarea>
+                </div>
+            </div>
+            <div class="option" style="padding-right: 0px;">
+                <div class="l">
+                    <label for="code">Post code</label>
+                </div>
+                <div class="in">
+                    <input id="code" name="code" type="number">
+                </div>
+            </div>
+            <div class="option">
+                <div class="l">
+                    <label for="country">Country</label>
+                </div>
+                <div class="in">
+                    <input id="country" name="country" type="text">
+                </div>
+            </div>
+
+            <h2>Step 3: Card details</h2>
+            <div class="option">
+                <div class="card-r">
+                    <label for="card">Card type</label><br>
+                
+                    <input id="card" name="card" type="radio" style="margin-left: 20px;"> <img src="img/visa.png" alt="" width="30px"> VISA
+                    <span style="margin-right: 10px;"></span>
+                    <input id="card" name="card" type="radio"> <img src="img/amex.png" alt="" width="30px"> AmEX
+                    <span style="margin-right: 10px;"></span>
+                    <input id="card" name="card" type="radio"> <img src="img/mastercard.png" alt="" width="30px"> Mastercard
+                </div>
+            </div>
+            <div class="option" style="padding-right: 0px;">
+                <div class="l">
+                    <label for="code">Card number</label>
+                </div>
+                <div class="in">
+                    <input id="code" name="code" type="number">
+                </div>
+            </div>
+            <div class="option">
+                <div class="l">
+                    <label for="code">Security code</label>
+                </div>
+                <div class="in">
+                    <input id="code" name="code" type="number">
+                </div>
+            </div>
+            <div class="option">
+                <div class="l">
+                    <label for="nameCard">Name on card</label>
+                </div>
+                <div class="in">
+                    <input id="nameCard" name="nameCard" type="text" placeholder="Exact name as on the card">
+                </div>
+            </div>
+            <div class="container-b">
+                <button>BUY IT</button>
+            </div>
+
+        </form> 
+    </div>  
+    </div>
+</body>
+</html>
